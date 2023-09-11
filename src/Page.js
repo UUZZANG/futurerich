@@ -75,7 +75,7 @@ const Page = ()=> {
 
         <div className='box-contents'>
 
-        <div><New name={sumRef.current} /></div>
+        {/* <div><New name={sumRef.current} /></div> */}
           {/* 현재 Question 렌더링 */}        
           <div><dl><dt>{questions.all[count].num}</dt><dd>{questions.all[count].question}</dd></dl></div>   
           
@@ -83,7 +83,7 @@ const Page = ()=> {
           { questions.all[count].choices.map((item) => {                                                
               return <ul className='list-anwser'> 
               <button className= {item.num === countRef.current[count]? 'btn-back':'btn-question'} onClick={ () => choiceHandler(item.num,questions.all[count].answer) }>
-                <span>{item.num}</span>{item.desc}
+                {item.desc}
               </button>
                       </ul>             
           })}

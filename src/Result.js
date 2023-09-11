@@ -63,7 +63,7 @@ function Result() {
 
         <div className='box-contents type-result'>
 
-          <dl>
+          <dl className='list-score'>
             <dt><em>{number}</em>점</dt>
             <dd>꽤 잘 아시네요?</dd>
           </dl>
@@ -72,15 +72,17 @@ function Result() {
             <a className='btn-share' href='#'>문제 공유하기</a>
             <a className='btn-share' href='#'>결과 공유하기</a>
           </div>
-          <Link to='/Main'>
-            <button className='btn-basic'>다시하기</button>
-          </Link>          
-          <div className='wrap-share'>
+          <div className='wrap-sharesns mt10'>
             <img className="image" alt="facebook" src="img/facebook.png" />
             <img className="image" alt="twitter" src="img/twitter.png" />
             <img className="image" alt="kakao" src="img/kakaotalk.png" onClick={shareKakao}/>
             <img className="image" alt="instagram" src="img/instagram.webp" />
           </div>
+
+          <Link to='/Main'>
+            <button className='btn-basic mt20'>다시하기</button>
+          </Link>          
+
         </div>
      
         <div className='bg-main'>
