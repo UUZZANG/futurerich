@@ -3,7 +3,8 @@ import './App.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { useLocation } from "react-router-dom";
 import Share from './Share.js';
-import { useEffect } from "react";
+import { useState } from "react";
+import questions from './question.json';
 
 <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 
@@ -13,18 +14,19 @@ function Result() {
   const navigate  = useNavigate();
   const number = location.state.value;
 
-  const realUrl = "http://localhost:3000"
+  const realUrl = "http://localhost:3001"
 
   const { Kakao } = window;
+  const [showAnswer, setShowAnswer] = useState(false); 
 
-  useEffect(()=>{
-    // init 해주기 전에 clean up 을 해준다.
-      Kakao.cleanup();
-      // 자신의 js 키를 넣어준다.
-      Kakao.init('b4629ecbe5071ba0d1675efe11542053');
-      // 잘 적용되면 true 를 뱉는다.
-      console.log(Kakao.isInitialized());
-  },[]);
+  // useEffect(()=>{
+  //   // init 해주기 전에 clean up 을 해준다.
+  //     Kakao.cleanup();
+  //     // 자신의 js 키를 넣어준다.
+  //     Kakao.init('b4629ecbe5071ba0d1675efe11542053');
+  //     // 잘 적용되면 true 를 뱉는다.
+  //     console.log(Kakao.isInitialized());
+  // },[]);
 
 
   const shareKakao = () => {
@@ -51,12 +53,13 @@ function Result() {
         },);
    }
 
-  const shareHandler = () =>  {   
-  
+  const shareHandler = () =>  {     
       navigate('/Share');     
-    
-}
+  }
   
+  const handleShow = () => {
+    showAnswer?  setShowAnswer(false) : setShowAnswer(true);
+  }
   return (    
 
       <div className='ly-contents'>
@@ -69,8 +72,20 @@ function Result() {
           </dl>
 
           <div className='wrap-share'>
-            <a className='btn-share' href='#'>문제 공유하기</a>
-            <a className='btn-share' href='#'>결과 공유하기</a>
+            {/* <a className='btn-share' >문제 공유하기</a>
+            <a className='btn-share' >결과 공유하기</a> */}
+            <a className='btn-share' onClick={handleShow}>정답 
+              {showAnswer? '닫기' : '보기' }              
+              </a>            
+          </div>
+          <div>             
+         
+          {showAnswer? questions.all.map((item) => {             
+              let answerDesc = item.choices.findIndex((v)=> v.num === item.answer);                                   
+              return <ul className='list-anwser'> 
+                          {item.question} : {item.answer} : {item.choices[answerDesc].desc}
+                    </ul>             
+          }) :null}
           </div>
           <div className='wrap-sharesns mt10'>
             <img className="image" alt="facebook" src="img/facebook.png" />
