@@ -59,6 +59,14 @@ function Result() {
   
   const handleShow = () => {
     showAnswer?  setShowAnswer(false) : setShowAnswer(true);
+    const resultText = document.querySelector('.list-result')
+    if(resultText.classList.contains('show')){
+      resultText.classList.remove('show')
+    }else{
+      resultText.classList.add('show')
+    }
+    resultText.addEventListener('click', function(){
+    })
   }
   return (    
 
@@ -71,22 +79,7 @@ function Result() {
             <dd>꽤 잘 아시네요?</dd>
           </dl>
 
-          <div className='wrap-share'>
-            {/* <a className='btn-share' >문제 공유하기</a>
-            <a className='btn-share' >결과 공유하기</a> */}
-            <a className='btn-share' onClick={handleShow}>정답 
-              {showAnswer? '닫기' : '보기' }              
-              </a>            
-          </div>
-          <div>             
-         
-          {showAnswer? questions.all.map((item) => {             
-              let answerDesc = item.choices.findIndex((v)=> v.num === item.answer);                                   
-              return <ul className='list-anwser'> 
-                          {item.question} : {item.answer} : {item.choices[answerDesc].desc}
-                    </ul>             
-          }) :null}
-          </div>
+
           <div className='wrap-sharesns mt10'>
             <img className="image" alt="facebook" src="img/facebook.png" />
             <img className="image" alt="twitter" src="img/twitter.png" />
@@ -96,7 +89,23 @@ function Result() {
 
           <Link to='/Main'>
             <button className='btn-basic mt20'>다시하기</button>
-          </Link>          
+          </Link>       
+          <div className='wrap-share'>
+            {/* <a className='btn-share' >문제 공유하기</a>
+            <a className='btn-share' >결과 공유하기</a> */}
+            <a className='btn-basic sm' onClick={handleShow}>정답 
+              {showAnswer? '닫기' : '보기' }              
+            </a>            
+          </div>   
+          <div className='list-result' onClick={handleShow}>                  
+          {showAnswer? questions.all.map((item) => {     
+              let answerDesc = item.choices.findIndex((v)=> v.num === item.answer);                                   
+              return <div className='txt-result'> 
+                        <p>{item.question}</p>
+                        <b>{item.choices[answerDesc].desc}</b>
+                    </div>             
+          }) :null}
+          </div>
 
         </div>
      

@@ -15,6 +15,7 @@
 .input-basic {width:200px; height:40px; padding:5px 10px; box-sizing:border-box; border:1px solid #4e4749; background-color:#0e181d;}
 .btn-share {display:block; width:200px; height:40px; font-size:16px; line-height:36px; border-radius:20px; background-color:rgba(134,124,179,0.5); text-decoration:none;}
 .btn-share:hover {background-color:#695c9b;}
+.btn-basic.sm {height:36px; line-height:36px;}
 
 .btn-question {display:block; min-width:200px; height:40px; border:1px solid #de5082; border-radius:20px; background-color:rgba(0,0,0,0.5); color:#fff; cursor: pointer;}
 .btn-question:hover {background-color:rgba(222,80,130,0.8);}
@@ -58,6 +59,9 @@
   margin:10px;
 }
 
+.list-result.show {position:fixed; top:0; left:0; right:0; bottom:0; display:flex; flex-direction: column;justify-content: center; background:rgba(0,0,0,0.8);}
+.txt-result p {margin:10px 0 2px 0;}
+.txt-result b {color:#867bb3;}
 
 .pageDetail {background-color:#172830;}
 
