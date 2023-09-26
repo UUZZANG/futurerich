@@ -3,7 +3,7 @@ import './App.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { useLocation } from "react-router-dom";
 import Share from './Share.js';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import questions from './question.json';
 
 <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
@@ -14,19 +14,19 @@ function Result() {
   const navigate  = useNavigate();
   const number = location.state.value;
 
-  const realUrl = "http://localhost:3001"
+  const realUrl = "https://richrichrich.netlify.app"
 
   const { Kakao } = window;
   const [showAnswer, setShowAnswer] = useState(false); 
 
-  // useEffect(()=>{
-  //   // init 해주기 전에 clean up 을 해준다.
-  //     Kakao.cleanup();
-  //     // 자신의 js 키를 넣어준다.
-  //     Kakao.init('b4629ecbe5071ba0d1675efe11542053');
-  //     // 잘 적용되면 true 를 뱉는다.
-  //     console.log(Kakao.isInitialized());
-  // },[]);
+  useEffect(()=>{
+    // init 해주기 전에 clean up 을 해준다.
+      Kakao.cleanup();
+      // 자신의 js 키를 넣어준다.
+      Kakao.init('1d48288a27aaedef97d046118e2b65c4');
+      // 잘 적용되면 true 를 뱉는다.
+      console.log(Kakao.isInitialized());
+  },[]);
 
 
   const shareKakao = () => {
@@ -37,7 +37,8 @@ function Result() {
             title: '글로리 점수',
             description: '내 점수',
             imageUrl:
-            'https://mud-kage.kakao.com/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR74ujya9pjHfT6TbeFkYua_JSu5dcEtmpbA&usqp=CAU',
+            
             link: {
                 mobileWebUrl: realUrl,
             },
@@ -68,6 +69,19 @@ function Result() {
     resultText.addEventListener('click', function(){
     })
   }
+
+
+  const resultMsg =() => {
+    if (number > 70) {
+        return '꽤 잘 아시네요?'}
+    else if( number > 40){ 
+      return '조금만 더 기억을~'}
+    else { 
+      return '팬 아님! 한번 더 보시길!'}
+                       
+  }
+
+
   return (    
 
       <div className='ly-contents'>
@@ -76,15 +90,15 @@ function Result() {
 
           <dl className='list-score'>
             <dt><em>{number}</em>점</dt>
-            <dd>꽤 잘 아시네요?</dd>
+            <dd>{  resultMsg()  }</dd>
           </dl>
 
 
           <div className='wrap-sharesns mt10'>
-            <img className="image" alt="facebook" src="img/facebook.png" />
-            <img className="image" alt="twitter" src="img/twitter.png" />
-            <img className="image" alt="kakao" src="img/kakaotalk.png" onClick={shareKakao}/>
-            <img className="image" alt="instagram" src="img/instagram.webp" />
+            {/* <img className="image" alt="facebook" src="img/facebook.png" />
+            <img className="image" alt="twitter" src="img/twitter.png" /> */}
+            <img className="image" alt="kakao" src="img/kakaotalk.png" onClick={shareKakao} style={{cursor:'pointer'}}/>
+            {/* <img className="image" alt="instagram" src="img/instagram.webp" /> */}
           </div>
 
           <Link to='/Main'>
