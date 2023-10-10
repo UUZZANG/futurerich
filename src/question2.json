@@ -1,0 +1,153 @@
+{ "all":[
+    {
+      "num": "1",
+      "question": "나는 솔로 16기는 무슨 특집인가?",
+      "choices": [
+        { "num" : "A",
+          "desc": "모태솔로"},
+        { "num" : "B",
+          "desc": "전문직"},
+        { "num" : "C",
+          "desc": "돌싱"},
+        { "num" : "D",
+          "desc": "50대"}
+      ],
+      "answer": "C"
+    },
+    {
+      "num": "2",
+      "question": "16기 총 출연 인원은?",
+      "choices": [
+        { "num" : "A",
+          "desc": "10"},
+        { "num" : "B",
+          "desc": "12"},
+        { "num" : "C",
+          "desc": "14"},
+        { "num" : "D",
+          "desc": "16"}
+      ],
+      "answer": "D"
+    },
+    {
+      "num": "3",
+      "question": "악플러는 다 고소하겠다고 으름장 놓은 출연진은?",
+      "choices": [
+        { "num" : "A",
+          "desc": "현숙"},
+        { "num" : "B",
+          "desc": "영숙"},
+        { "num" : "C",
+          "desc": "옥순"},
+        { "num" : "D",
+          "desc": "영희"}
+      ],
+      "answer": "B"
+    },
+    {
+      "num": "4",
+      "question": "상철과 XX 의 나이차는?",
+      "choices": [
+        { "num" : "A",
+          "desc": "-2"},
+        { "num" : "B",
+          "desc": "0"},
+        { "num" : "C",
+          "desc": "4"},
+        { "num" : "D",
+          "desc": "9"}
+      ],
+      "answer": "B"
+    },
+    {
+      "num": "5",
+      "question": "XX와 ㅌㅌ의 갈등의 시초가 된 4자 성어는?",
+      "choices": [
+        { "num" : "A",
+          "desc": "파란만장"},
+        { "num" : "B",
+          "desc": "고진감래"},
+        { "num" : "C",
+          "desc": "산전수전"},
+        { "num" : "D",
+          "desc": "토사구팽"}
+      ],
+      "answer": "B"
+    },
+    {
+      "num": "6",
+      "question": "상철은 녹화전 어디에서 살다가 왔나?",
+      "choices": [
+        { "num" : "A",
+          "desc": "미국"},
+        { "num" : "B",
+          "desc": "말레이시아"},
+        { "num" : "C",
+          "desc": "중국"},
+        { "num" : "D",
+          "desc": "체코"}
+      ],
+      "answer": "B"
+    },
+    {
+      "num": "7",
+      "question": "순자의 아이는 누가 키워주고 있는가?",
+      "choices": [
+        { "num" : "A",
+          "desc": "친정엄마"},
+        { "num" : "B",
+          "desc": "친정아빠"},
+        { "num" : "C",
+          "desc": "언니"},
+        { "num" : "D",
+          "desc": "삼촌"}
+      ],
+      "answer": "B"
+    },
+    {
+      "num": "8",
+      "question": "영자와의 데이트 후 상철이 요리한 것은?",
+      "choices": [
+        { "num" : "A",
+          "desc": "제육볶음"},
+        { "num" : "B",
+          "desc": "짜장라면"},
+        { "num" : "C",
+          "desc": "김치볶음밥"},
+        { "num" : "D",
+          "desc": "냉동만두"}
+      ],
+      "answer": "B"
+    },
+    {
+      "num": "9",
+      "question": "최종 영자가 선택한 출연진은?",
+      "choices": [
+        { "num" : "A",
+          "desc": "영식"},
+        { "num" : "B",
+          "desc": "광수"},
+        { "num" : "C",
+          "desc": "영호"},
+        { "num" : "D",
+          "desc": "상철"}
+      ],
+      "answer": "B"
+    },
+    {
+      "num": "10",
+      "question": "데프콘을 격앙시킨 남자 출연진은?",
+      "choices": [
+        { "num" : "A",
+          "desc": "그림"},
+        { "num" : "B",
+          "desc": "운동화"},
+        { "num" : "C",
+          "desc": "머리끈"},
+        { "num" : "D",
+          "desc": "모자"}
+      ],
+      "answer": "B"
+    }
+  ]
+}
