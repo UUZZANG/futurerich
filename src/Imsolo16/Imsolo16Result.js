@@ -36,7 +36,7 @@ function Imsolo16Result() {
             title: '나는솔로 16 퀴즈',
             description: '내 점수',
             imageUrl:
-            'https://https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLWM92wWVlMA2EWApL8SMVlBGD1DD5JL-kaQ&usqp=CAU',
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLWM92wWVlMA2EWApL8SMVlBGD1DD5JL-kaQ&usqp=CAU',
             
             link: {
                 mobileWebUrl: realUrl,
