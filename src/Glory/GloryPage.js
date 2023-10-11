@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 import questions from './question.json';
 
 import { useState, useRef } from 'react';
@@ -105,11 +105,13 @@ const GloryPage = ()=> {
              </Link>   */}
 
             { count < 1 ? null: <button className='btn-back' onClick={handleBack}>이전으로</button> }
+            <Link to="/"><button className='link-question txt-bl'>다른 퀴즈 둘러보기</button></Link>
           </div>
          
         </div>
      
         <div className='bg-main'>
+
         </div>
                 
       </div>
