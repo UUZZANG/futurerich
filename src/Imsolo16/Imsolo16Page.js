@@ -1,11 +1,11 @@
 import React from 'react';
 import '../App.css';
 import { useNavigate } from 'react-router-dom';
-import questions from '../question.json';
+import questions from './question2.json';
 
 import { useState, useRef } from 'react';
 
-const GloryPage = ()=> {   
+const Imsolo16Page = ()=> {   
 
   const [count, setCount] = useState(0);  //질문 진행 count  
   const navigate  = useNavigate();
@@ -37,7 +37,7 @@ const GloryPage = ()=> {
       // 그래서 모아놨다가 count 계산하기
       // a) json에서 answer만 모은 배열로 하던가
       // b) answerAlpabet을 모아놓던가 (지금은 이방법)
-      navigate('/GloryResult',{ state: { value: sumRef.current } });
+      navigate('/Imsolo16Result',{ state: { value: sumRef.current } });
     }
     
     
@@ -65,7 +65,7 @@ const GloryPage = ()=> {
       if (!!questions.all[count-1]){
         setCount(count-1)
       } else {
-        navigate('/Main');     
+        navigate('/Imsolo16');     
       } 
 	}
 
@@ -118,4 +118,4 @@ const GloryPage = ()=> {
   );
 }
 
-export default GloryPage;  
+export default Imsolo16Page;  

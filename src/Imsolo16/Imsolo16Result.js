@@ -2,13 +2,12 @@ import React from 'react';
 import '../App.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { useLocation } from "react-router-dom";
-import Share from './Share.js';
 import { useState, useEffect } from "react";
-import questions from '../question.json';
+import questions from './question2.json';
 
 <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 
-function GloryResult() {   
+function Imsolo16Result() {   
   
   const location = useLocation();
   const navigate  = useNavigate();
@@ -20,12 +19,12 @@ function GloryResult() {
   const [showAnswer, setShowAnswer] = useState(false); 
 
   useEffect(()=>{
-    // init 해주기 전에 clean up 을 해준다.
-     //Kakao.cleanup();
+      // init 해주기 전에 clean up 을 해준다.
+     Kakao.cleanup();
       // 자신의 js 키를 넣어준다.
-      //Kakao.init('1d48288a27aaedef97d046118e2b65c4');
+      Kakao.init('1d48288a27aaedef97d046118e2b65c4');
       // 잘 적용되면 true 를 뱉는다.
-      //console.log(Kakao.isInitialized());
+      console.log(Kakao.isInitialized());
   },[]);
 
 
@@ -34,10 +33,10 @@ function GloryResult() {
     Kakao.Share.sendDefault({
         objectType: 'feed',
         content: {
-            title: '글로리 점수',
+            title: '나는솔로 16 퀴즈',
             description: '내 점수',
             imageUrl:
-            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR74ujya9pjHfT6TbeFkYua_JSu5dcEtmpbA&usqp=CAU',
+            'https://https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLWM92wWVlMA2EWApL8SMVlBGD1DD5JL-kaQ&usqp=CAU',
             
             link: {
                 mobileWebUrl: realUrl,
@@ -54,9 +53,7 @@ function GloryResult() {
         },);
    }
 
-  const shareHandler = () =>  {     
-      navigate('/Share');     
-  }
+
   
   const handleShow = () => {
     showAnswer?  setShowAnswer(false) : setShowAnswer(true);
@@ -135,4 +132,4 @@ function GloryResult() {
   );
 }
 
-export default GloryResult;     // <= App이 위 함수 이름 & 파일이름과 같아야함
+export default Imsolo16Result;     // <= App이 위 함수 이름 & 파일이름과 같아야함

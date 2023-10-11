@@ -43,69 +43,9 @@
           "desc": "영희"}
       ],
       "answer": "B"
-    },
+    },    
     {
       "num": "4",
-      "question": "상철과 XX 의 나이차는?",
-      "choices": [
-        { "num" : "A",
-          "desc": "-2"},
-        { "num" : "B",
-          "desc": "0"},
-        { "num" : "C",
-          "desc": "4"},
-        { "num" : "D",
-          "desc": "9"}
-      ],
-      "answer": "B"
-    },
-    {
-      "num": "5",
-      "question": "XX와 ㅌㅌ의 갈등의 시초가 된 4자 성어는?",
-      "choices": [
-        { "num" : "A",
-          "desc": "파란만장"},
-        { "num" : "B",
-          "desc": "고진감래"},
-        { "num" : "C",
-          "desc": "산전수전"},
-        { "num" : "D",
-          "desc": "토사구팽"}
-      ],
-      "answer": "B"
-    },
-    {
-      "num": "6",
-      "question": "상철은 녹화전 어디에서 살다가 왔나?",
-      "choices": [
-        { "num" : "A",
-          "desc": "미국"},
-        { "num" : "B",
-          "desc": "말레이시아"},
-        { "num" : "C",
-          "desc": "중국"},
-        { "num" : "D",
-          "desc": "체코"}
-      ],
-      "answer": "B"
-    },
-    {
-      "num": "7",
-      "question": "순자의 아이는 누가 키워주고 있는가?",
-      "choices": [
-        { "num" : "A",
-          "desc": "친정엄마"},
-        { "num" : "B",
-          "desc": "친정아빠"},
-        { "num" : "C",
-          "desc": "언니"},
-        { "num" : "D",
-          "desc": "삼촌"}
-      ],
-      "answer": "B"
-    },
-    {
-      "num": "8",
       "question": "영자와의 데이트 후 상철이 요리한 것은?",
       "choices": [
         { "num" : "A",
@@ -120,34 +60,104 @@
       "answer": "B"
     },
     {
-      "num": "9",
-      "question": "최종 영자가 선택한 출연진은?",
+      "num": "5",
+      "question": "광수가 영철이에게 한말은 ? 'OOO깔까?'",
       "choices": [
         { "num" : "A",
-          "desc": "영식"},
+          "desc": "다이다이"},
         { "num" : "B",
-          "desc": "광수"},
+          "desc": "맞짱"},
         { "num" : "C",
-          "desc": "영호"},
+          "desc": "테이프"},
         { "num" : "D",
-          "desc": "상철"}
+          "desc": "삼자대면"}
+      ],
+      "answer": "C"
+    },
+    {
+      "num": "6",
+      "question": "순자의 리그오브레전드 티어는 어디인가?",
+      "choices": [
+        { "num" : "A",
+          "desc": "실버"},
+        { "num" : "B",
+          "desc": "플래티넘"},
+        { "num" : "C",
+          "desc": "브론즈"},
+        { "num" : "D",
+          "desc": "골드"},
+        { "num" : "E",
+          "desc": "다이아"}          
+      ],
+      "answer": "D"
+    },
+    {
+      "num": "7",
+      "question": "상철은 어떻게 영숙의 호감도를 잃었을까?",
+      "choices": [
+        { "num" : "A",
+          "desc": "코딱지"},
+        { "num" : "B",
+          "desc": "술주정"},
+        { "num" : "C",
+          "desc": "젓가락질"},
+        { "num" : "D",
+          "desc": "쩝쩝충"},
+        { "num" : "E",
+          "desc": "욕설"}          
       ],
       "answer": "B"
     },
     {
-      "num": "10",
-      "question": "데프콘을 격앙시킨 남자 출연진은?",
+      "num": "8",
+      "question": "곱디 고운 옥순의 직업은 무엇일까?",
       "choices": [
         { "num" : "A",
-          "desc": "그림"},
+          "desc": "동양화가"},
         { "num" : "B",
-          "desc": "운동화"},
+          "desc": "일러스트레이터"},
         { "num" : "C",
-          "desc": "머리끈"},
+          "desc": "시각디자이너"},
         { "num" : "D",
-          "desc": "모자"}
+          "desc": "서양화가"},
+        { "num" : "E",
+          "desc": "패션디자이너"}          
       ],
-      "answer": "B"
+      "answer": "D"
+    },
+    {
+      "num": "9",
+      "question": "영숙이 상철에게 한말은 ? '상철아 여긴 OO 아니고 OO 이다 '",
+      "choices": [
+        { "num" : "A",
+          "desc": "미국/한국"},
+        { "num" : "B",
+          "desc": "일본/한국"},
+        { "num" : "C",
+          "desc": "캐나다/한국"},
+        { "num" : "D",
+          "desc": " 중국/한국"},
+        { "num" : "E",
+          "desc": "호주/한국"}          
+      ],
+      "answer": "A"
+    },
+    {
+      "num": "10",
+      "question": "다사다난했던 16기의 커플은 몇쌍이 탄생했을까?",
+      "choices": [
+        { "num" : "A",
+          "desc": "없음"},
+        { "num" : "B",
+          "desc": "1"},
+        { "num" : "C",
+          "desc": "2"},
+        { "num" : "D",
+          "desc": "3"},
+        { "num" : "E",
+          "desc": "4"}          
+      ],
+      "answer": "C"
     }
   ]
 }
