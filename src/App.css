@@ -22,6 +22,7 @@ a {text-decoration:none;}
 .btn-share {display:block; width:200px; height:40px; font-size:16px; line-height:36px; border-radius:20px; background-color:rgba(134,124,179,0.5); text-decoration:none;}
 .btn-share:hover {background-color:#695c9b;}
 .btn-basic.sm {height:36px; line-height:36px;}
+.btn-basic.full {background-color:rgba(222,80,130,0.8); color:#fff;}
 
 .btn-question {display:block; min-width:200px; height:40px; border:1px solid #de5082; border-radius:20px; background-color:rgba(0,0,0,0.5); color:#fff; cursor: pointer;}
 .btn-question:hover {background-color:rgba(222,80,130,0.8);}
@@ -30,8 +31,8 @@ a {text-decoration:none;}
 /* contents */
 
 .ly-main {display:flex; position:relative; justify-content:center; align-items: center; flex-direction: column; height:100vh; z-index:999;}
-.ly-main h1 {display:block; margin-bottom:20px; font-size:1.2em; color:#fff;}
-.ly-main h1 p {font-style:italic; font-size:2.2em; color:#de5082;}
+.ly-main h1 {display:block; margin-bottom:20px; font-size:1.4em; color:#fff;}
+.ly-main h1 p {font-style:italic; font-size:1.8em; color:#de5082;}
 
 .ly-contents {display:flex; position:relative; justify-content:center; align-items: center; flex-direction: column; height:100vh;}
 .box-contents {position:relative; z-index:999;}
@@ -55,9 +56,13 @@ a {text-decoration:none;}
 .list-anwser li span {margin-right:10px; color:#867bb3;}
 .box-contents .list-score dd {max-width:100%; font-size:22px;}
 .box-contents .list-score dt,
-.box-contents .list-score dt em {font-size:36px;}
+.box-contents .list-score dt em {font-size:42px;}
 .box-contents .list-score dt em {margin-right:3px;}
 
+.wrap-sharesns {
+  background:rgba(255,255,255,0.3);
+  border-radius:10px;
+}
 .wrap-sharesns > img {
   width:36px;
   height: 36px;
@@ -81,10 +86,13 @@ a {text-decoration:none;}
 /* main */
 .ly-main-q {
   display: flex;
+  position: relative;
   height: 100vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color:#0e181d;
+  z-index: 99;
 }
 .txt-mtitle {
   padding:20px;
@@ -104,12 +112,18 @@ a {text-decoration:none;}
   font-size:18px;
   word-break:keep-all;
 }
-.main-question > a:hover {
+.main-question > a:nth-child(even) {
   background:rgba(255,255,255,0.1);
+}
+.main-question > a:hover {
+  background:rgba(255,255,255,0.3);
 }
 .main-question > a  p {
   padding:20px 0;
   font-size:14px;
+}
+.link-question img {
+  width:100%;
 }
 
 .question-page,

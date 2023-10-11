@@ -70,11 +70,11 @@ function GloryResult() {
 
   const resultMsg =() => {
     if (number > 70) {
-        return '꽤 잘 아시네요?'}
+        return '꽤 잘 아네? 🥴'}
     else if( number > 40){ 
-      return '조금만 더 기억을~'}
+      return '기억을 해 기억을! 😠'}
     else { 
-      return '팬 아님! 한번 더 보시길!'}
+      return '보긴 했니? 🤬'}
                        
   }
 
@@ -94,20 +94,19 @@ function GloryResult() {
           <div className='wrap-sharesns mt10'>
             {/* <img className="image" alt="facebook" src="img/facebook.png" />
             <img className="image" alt="twitter" src="img/twitter.png" /> */}
-            <img className="image" alt="kakao" src="img/kakaotalk.png" onClick={shareKakao} style={{cursor:'pointer'}}/>
+            <img className="image" alt="카카오톡 공유하기" src="img/kakaotalk.png" onClick={shareKakao} style={{cursor:'pointer'}}/>
             {/* <img className="image" alt="instagram" src="img/instagram.webp" /> */}
           </div>
 
-          <Link to='/Glory'>
-            <button className='btn-basic mt20'>다시하기</button>
-          </Link>    
-          <Link to='/Main'>
-            <button className='btn-basic mt20'>다른 퀴즈 하기</button>
-          </Link>    
+          <div className='wrap-btn'>
+            <button className='btn-basic'><Link to='/Glory'>다시하기</Link></button>
+            <button className='btn-basic mt10'><Link to='/Main'>다른 퀴즈 하기</Link></button>
+          </div>
+ 
           <div className='wrap-share'>
             {/* <a className='btn-share' >문제 공유하기</a>
             <a className='btn-share' >결과 공유하기</a> */}
-            <a className='btn-basic sm' onClick={handleShow}>정답 
+            <a className='btn-basic sm full' onClick={handleShow}>정답 
               {showAnswer? '닫기' : '보기' }              
             </a>            
           </div>   

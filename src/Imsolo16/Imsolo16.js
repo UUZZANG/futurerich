@@ -6,16 +6,15 @@ import { Link } from 'react-router-dom';
 function Imsolo16() {    
 
   return (    
-    <div className="main">  
+    <div className="question-page">  
      
       <div className='ly-main'>
-          <h1><p>'나는 솔로 16기~ '</p> 흥미진진 출연진 심층분석 퀴즈! </h1>  
+          <h1><p>🤯 나는 솔로 16기 🤯</p> 핫하디 핫한 16기 분석 퀴즈! </h1>  
           <Link to="/Imsolo16Page">
-            <button className='btn-basic'>Start!</button>   
+            <button className='btn-basic'>Start👉</button>   
           </Link>               
          
       </div>
-      <div className='bg-main'></div>
       
     </div>      
   );
