@@ -1,0 +1,153 @@
+{ "all":[
+    {
+      "num": "1",
+      "question": "강현남이 남편이 죽은 후 차린 가게에서는 무엇을 파는가?",
+      "choices": [
+        { "num" : "A",
+          "desc": "립스틱"},
+        { "num" : "B",
+          "desc": "꽃"},
+        { "num" : "C",
+          "desc": "반찬"},
+        { "num" : "D",
+          "desc": "골프채"}
+      ],
+      "answer": "C"
+    },
+    {
+      "num": "2",
+      "question": "하도영이 최헤정에게 사준 가방 브랜드는?",
+      "choices": [
+        { "num" : "A",
+          "desc": "샤넬"},
+        { "num" : "B",
+          "desc": "에르메스"},
+        { "num" : "C",
+          "desc": "루이비통"},
+        { "num" : "D",
+          "desc": "구찌"}
+      ],
+      "answer": "B"
+    },
+    {
+      "num": "3",
+      "question": "문동은이 사는 빌라의 이름은?",
+      "choices": [
+        { "num" : "A",
+          "desc": "에덴빌라"},
+        { "num" : "B",
+          "desc": "헤븐빌라"},
+        { "num" : "C",
+          "desc": "헬빌라"},
+        { "num" : "D",
+          "desc": "덴버빌라"}
+      ],
+      "answer": "B"
+    },
+    {
+      "num": "4",
+      "question": "문동은이 손명오의 복수 시작을 위해 보여준 물건은?",
+      "choices": [
+        { "num" : "A",
+          "desc": "사진"},
+        { "num" : "B",
+          "desc": "부적"},
+        { "num" : "C",
+          "desc": "교복"},
+        { "num" : "D",
+          "desc": "명찰"}
+      ],
+      "answer": "B"
+    },
+    {
+      "num": "5",
+      "question": "더 글로리 2부의 방영날은?",
+      "choices": [
+        { "num" : "A",
+          "desc": "2023.03.08"},
+        { "num" : "B",
+          "desc": "2023.03.10"},
+        { "num" : "C",
+          "desc": "2023.03.13"},
+        { "num" : "D",
+          "desc": "2023.03.18"}
+      ],
+      "answer": "B"
+    },
+    {
+      "num": "6",
+      "question": "문동은과 문동은이 사는 빌라 주인할머니는 어디서 처음 만났나?",
+      "choices": [
+        { "num" : "A",
+          "desc": "부동산"},
+        { "num" : "B",
+          "desc": "빌라"},
+        { "num" : "C",
+          "desc": "한강"},
+        { "num" : "D",
+          "desc": "목욕탕"}
+      ],
+      "answer": "B"
+    },
+    {
+      "num": "7",
+      "question": "전재준 가게의 이름은?",
+      "choices": [
+        { "num" : "A",
+          "desc": "시리"},
+        { "num" : "B",
+          "desc": "시스타"},
+        { "num" : "C",
+          "desc": "시라소니"},
+        { "num" : "D",
+          "desc": "시에스타"}
+      ],
+      "answer": "B"
+    },
+    {
+      "num": "8",
+      "question": "최혜정의 부모님 직업은?",
+      "choices": [
+        { "num" : "A",
+          "desc": "식당"},
+        { "num" : "B",
+          "desc": "약국"},
+        { "num" : "C",
+          "desc": "카페"},
+        { "num" : "D",
+          "desc": "세탁소"}
+      ],
+      "answer": "B"
+    },
+    {
+      "num": "9",
+      "question": "하예솔이 다니는 학교 이름은?",
+      "choices": [
+        { "num" : "A",
+          "desc": "세종"},
+        { "num" : "B",
+          "desc": "세영"},
+        { "num" : "C",
+          "desc": "세명"},
+        { "num" : "D",
+          "desc": "세정"}
+      ],
+      "answer": "B"
+    },
+    {
+      "num": "10",
+      "question": "문동은이 전재준에게 준 하예솔의 물건은?",
+      "choices": [
+        { "num" : "A",
+          "desc": "그림"},
+        { "num" : "B",
+          "desc": "운동화"},
+        { "num" : "C",
+          "desc": "머리끈"},
+        { "num" : "D",
+          "desc": "모자"}
+      ],
+      "answer": "B"
+    }
+  ]
+}
