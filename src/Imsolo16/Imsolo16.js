@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function Imsolo16() {    
 
   return (    
-    <div className="question-page">  
+    <div className="question-page blue">  
      
       <div className='ly-main'>
           <h1><p>🤯 나는 솔로 16기 🤯</p> 핫하디 핫한 16기 분석 퀴즈! </h1>  

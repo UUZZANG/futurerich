@@ -81,7 +81,7 @@ function Imsolo16Result() {
 
   return (    
 
-      <div className='ly-contents'>
+      <div className='ly-contents blue'>
 
         <div className='box-contents type-result'>
 
@@ -106,7 +106,7 @@ function Imsolo16Result() {
           <div className='wrap-share'>
             {/* <a className='btn-share' >문제 공유하기</a>
             <a className='btn-share' >결과 공유하기</a> */}
-            <a className='btn-basic sm' onClick={handleShow}>정답 
+            <a className='btn-basic sm full' onClick={handleShow}>정답 
               {showAnswer? '닫기' : '보기' }              
             </a>            
           </div>   
@@ -121,9 +121,7 @@ function Imsolo16Result() {
           </div>
 
         </div>
-     
-        <div className='bg-main'>
-        </div>
+    
                 
       </div>
       

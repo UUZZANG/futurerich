@@ -26,6 +26,8 @@ a {text-decoration:none;}
 
 .btn-question {display:block; min-width:200px; height:40px; border:1px solid #de5082; border-radius:20px; background-color:rgba(0,0,0,0.5); color:#fff; cursor: pointer;}
 .btn-question:hover {background-color:rgba(222,80,130,0.8);}
+.btn-question.full {background-color:rgba(222,80,130,0.8); color:#fff;}
+
 .btn-back {background:none; border:none; box-shadow: none; color:#de5082; text-decoration:underline; cursor:pointer;}
 
 /* contents */
@@ -50,7 +52,11 @@ a {text-decoration:none;}
 .bg-main {position:absolute; top:0; left:0; width:100%; height:100vh; background-color:#172830; background:url(../public/img/img_mainbg.jpg)no-repeat 0 0; background-size:cover; opacity:0.6;}
 .bg-main img {height:100%;}
 
-.wrap-btn {display:flex; flex-direction: column; margin-top:20px;}
+.wrap-btn {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top:20px;}
 .list-anwser {display:flex; justify-content: center; list-style:none;}
 .list-anwser li {padding:5px; font-weight:bold;}
 .list-anwser li span {margin-right:10px; color:#867bb3;}
@@ -95,6 +101,7 @@ a {text-decoration:none;}
   z-index: 99;
 }
 .txt-mtitle {
+  font-size: 1.8em;
   padding:20px;
   box-sizing:border-box;
   border-bottom:2px solid #de5082;
@@ -116,7 +123,7 @@ a {text-decoration:none;}
   background:rgba(255,255,255,0.1);
 }
 .main-question > a:hover {
-  background:rgba(255,255,255,0.3);
+  background:rgba(255,255,255,0.2);
 }
 .main-question > a  p {
   padding:20px 0;
@@ -138,6 +145,43 @@ a {text-decoration:none;}
 
 .pageDetail {background-color:#172830;}
 .hidden-question {display: hidden}
+
+.blue,
+.blue .box-contents dl dt,
+.blue .ly-main h1 p,
+.blue .btn-back {
+  color:royalblue !important;
+}
+
+.blue .btn-question:hover,
+.blue .btn-basic:hover,
+.blue .btn-basic.full {
+  background-color: royalblue !important;
+}
+
+.blue .btn-question,
+.blue .btn-basic {
+  border-color:royalblue !important;
+}
+
+.mint,
+.mint .box-contents dl dt,
+.mint .ly-main h1 p,
+.mint .btn-back {
+  color:turquoise !important;
+}
+
+.mint .btn-question:hover,
+.mint .btn-basic:hover,
+.mint .btn-basic.full {
+  background-color: turquoise !important;
+}
+
+.mint .btn-question,
+.mint .btn-basic {
+  border-color:turquoise !important;
+}
+
 
 
 

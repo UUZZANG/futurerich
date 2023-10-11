@@ -82,7 +82,7 @@ const GloryPage = ()=> {
           {/* 현재 카운트 질문에 대한 Choices 렌더링 */}        
           { questions.all[count].choices.map((item) => {                                                
               return <ul className='list-anwser'> 
-              <button className= {item.num === countRef.current[count]? 'btn-back':'btn-question'} onClick={ () => choiceHandler(item.num,questions.all[count].answer) }>
+              <button className= {item.num === countRef.current[count]? 'btn-question full':'btn-question'} onClick={ () => choiceHandler(item.num,questions.all[count].answer) }>
                 {item.desc}
               </button>
                       </ul>             
