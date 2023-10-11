@@ -25,7 +25,7 @@ a {text-decoration:none;}
 .btn-basic.full {background-color:rgba(222,80,130,0.8); color:#fff;}
 
 .btn-question {display:block; min-width:200px; height:40px; border:1px solid #de5082; border-radius:20px; background-color:rgba(0,0,0,0.5); color:#fff; cursor: pointer;}
-.btn-question:hover {background-color:rgba(222,80,130,0.8);}
+/* .btn-question:hover {background-color:rgba(222,80,130,0.8);} */
 .btn-question.full {background-color:rgba(222,80,130,0.8); color:#fff;}
 
 .btn-back {background:none; border:none; box-shadow: none; color:#de5082; text-decoration:underline; cursor:pointer;}
